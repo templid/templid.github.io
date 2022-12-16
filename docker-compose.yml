@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  vite:
+    tty: true
+    container_name: templid-tools
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    networks:
+      - templid-tools-network
+    volumes:
+      - .:/app
+    ports:
+      - 8080:5173
+
+networks:
+  templid-tools-network:
