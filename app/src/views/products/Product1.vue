@@ -49,8 +49,8 @@
                 <div class="basis-7/12">
                     <div class="flex justify-center pt-12">
                     <div class="relative h-[456px] w-full">
-                        <img class="absolute right-0 w-[540px] top-[45px] opacity-80" src="https://templid.github.io/img/invoice-source-example.png">
-                        <img class="absolute right-0 w-[420px] shadow-2xl" src="https://templid.github.io/img/invoice-example.png">
+                        <img class="absolute right-0 w-[540px] top-[45px] opacity-80" src="/img/invoice-source-example.png">
+                        <img class="absolute right-0 w-[420px] shadow-2xl" src="/img/invoice-example.png">
                     </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@ export default {
             initPayPal();
         
             function initPayPal() {
-                if (paypal) {
+                if (typeof(paypal) != "undefined") {
                     initPayPalButton();
             
                     return;
