@@ -1,7 +1,13 @@
 @extends('_layouts.main')
 
 @section('body')
-<div class="p-8">
-    <h1 class="text-3xl font-bold">Hello!</h1>
-</div>
+<x-homepage>
+    <div>
+        <h1 class="text-3xl font-bold">Hello!</h1>
+    
+        @foreach ($posts as $post)
+            {{ $post->subject }} ({{ $post->date }})
+        @endforeach
+    </div>
+</x-homepage>
 @endsection

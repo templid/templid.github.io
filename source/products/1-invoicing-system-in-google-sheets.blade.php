@@ -1,6 +1,7 @@
 @php
-    $title       = 'Invoicing System in Google Sheets';
-    $description = 'Invoicing System in Google Sheets is a template that helps you to create invoices in Google Sheets. It is a simple and easy to use. You can use to create invoices for your clients.';
+    $title = 'Invoicing System in Google Sheets';
+
+    $page->description = 'Invoicing System in Google Sheets is a template that helps you to create invoices in Google Sheets. It is a simple and easy to use. You can use to create invoices for your clients.';
 @endphp
 
 @extends('_layouts.product')

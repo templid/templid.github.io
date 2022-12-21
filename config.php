@@ -5,9 +5,12 @@ return [
     'baseUrl'     => '',
     'title'       => 'Templid tools',
     'description' => 'Templid tools - a collection of tools for business owners and entrepreneurs.',
-    'collections' => [],
+    'collections' => [
+        'posts',
+        'pages',
+    ],
 
-    'productTitle' => function ($page, $title) {
+    'pageTitle' => function ($page, $title) {
         if (!$title) {
             return $page->title;
         }

@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="canonical" href="{{ $page->getUrl() }}">
-        <meta name="description" content="{{ $description ?? $page->description }}">
-        <title>{{ $page->productTitle($title ?? null) }}</title>
+        <meta name="description" content="{{ $page->description }}">
+        <title>{{ $page->pageTitle($title ?? null) }}</title>
         <link rel="stylesheet" href="{{ mix('css/product.css', 'assets/build') }}">
         <script defer src="{{ mix('js/product.js', 'assets/build') }}"></script>
     </head>
