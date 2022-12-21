@@ -11,7 +11,8 @@ RUN apt-get update \
     && docker-php-ext-install mysqli \
     && pecl install xdebug-3.1.3 \
     && docker-php-ext-enable xdebug \
-    && echo "zend_extension=$(find /usr/local/lib/php/extensions/ -name xdebug.so)" > /usr/local/etc/php/conf.d/xdebug.ini \
     && echo "xdebug.mode = debug" >> /usr/local/etc/php/conf.d/xdebug.ini \
-    && echo "xdebug.start_with_request = yes" >> /usr/local/etc/php/conf.d/xdebug.ini \
+    && echo "xdebug.start_with_request = trigger" >> /usr/local/etc/php/conf.d/xdebug.ini \
     && echo "xdebug.discover_client_host = 1" >> /usr/local/etc/php/conf.d/xdebug.ini
+
+RUN useradd -m -d /home/templid -s /bin/bash templid
