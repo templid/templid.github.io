@@ -15,7 +15,7 @@
                 <div class="basis-5/12 rounded-b-xl bg-white shadow-2xl">
                     <div class="px-8 pt-12 pb-8">
                     <div class="mb-8">
-                        <img class="max-h-8" src="https://templid.com/img/logo.png" alt="Templid logo" />
+                        <img class="max-h-8" src="/assets/images/logo.png" alt="Templid logo" />
                     </div>
                     <div>
                         <h1 class="text-3xl font-bold">Invoicing System in Google Sheets</h1>
