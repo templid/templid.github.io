@@ -11,12 +11,14 @@
         @endif
     </div>
     <div class="p-6">
-        <div class="flex mb-2">
+        <div class="flex mb-2 gap-2">
             <h2 class="text-xl">{{ $title }}</h2>
             @if ($label)
-                <div class="ml-2 text-xs text-zinc-700 bg-pink-200 rounded-full px-3 py-1 flex items-center">
+            <div>
+                <div class="text-xs text-zinc-700 bg-pink-200 rounded-full px-3 py-1 mt-1">
                     {{ $label }}
                 </div>
+            </div>
             @endif
         </div>
         <div class="text-zinc-600 text-sm">

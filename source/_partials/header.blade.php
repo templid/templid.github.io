@@ -1,4 +1,4 @@
-<div class="py-8">
+<div class="py-10">
     <div class="flex items-center justify-between">
         <div>
             <a href="/"><img src="/assets/images/logo.png" alt="Templid logo" class="h-8"></a>
