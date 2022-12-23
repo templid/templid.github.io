@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
-    <body class="text-gray-900 font-sans antialiased h-full">
-        <main class="max-w-4xl mx-auto border-x border-zinc-100 px-10 text-base min-h-full pb-10">
+    <body class="text-gray-900 font-sans antialiased h-full bg-zinc-100">
+        <main class="max-w-4xl mx-auto md:px-10 px-6 text-base min-h-full pb-10 bg-white">
             @include('_partials.header')
             @yield('body')
         </main>
@@ -19,10 +19,24 @@
                 <div class="flex gap-6">
                     <div class="basis-1/3">{{ date('Y') }} &copy; Templid</div>
                     <div class="basis-1/3">
-                        <a href="/pages/about" class="underline">About us</a>
+                        <div class="font-bold mb-2 text-neutral-500">Information</div>
+                        <ul>
+                            <li>
+                                <a href="/pages/about" class="underline underline-offset-4 hover:no-underline">
+                                    About us
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="basis-1/3">
-                        <a href="/products/1-invoicing-system-in-google-sheets" class="underline">Invoicing System in Google Sheets</a>
+                        <div class="font-bold mb-2 text-neutral-500">Products</div>
+                        <ul>
+                            <li>
+                                <a href="/products/1-invoicing-system-in-google-sheets" class="underline underline-offset-4  hover:no-underline">
+                                    Invoicing System in Google Sheets
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
