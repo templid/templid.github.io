@@ -9,7 +9,7 @@
     :image="'/assets/images/about-us.jpeg'"
     :title="$title"
 >
-    <div class="[&>p]:mb-2">
+    <div class="[&>p]:mb-4">
         <p>Welcome to our blog about business measurement and automation!</p>
         <p>For us, the most engaging and rewarding aspect of business is finding ways to improve and streamline processes through the use of technology and data analysis. We are passionate about programming, spreadsheets, and working with numbers to find solutions for businesses.</p>
         <p>We started this blog to share our expertise and experience in these areas, and to provide valuable insights and advice to others who are interested in maximizing their business's potential through measurement and automation.</p>
