@@ -1,5 +1,5 @@
 @php
-    $title       = 'Create Your invoices in Google Sheets';
+    $title       = 'Free course: Create your invoices in Google Sheets';
     $description = 'This is not just a boring one-page Google Sheets template for manually generating invoices. This is a much improved version of such a template.';
 
     $benefits = [
@@ -28,6 +28,21 @@
             'iconPath' => 'M17.051,3.302H2.949c-0.866,0-1.567,0.702-1.567,1.567v10.184c0,0.865,0.701,1.568,1.567,1.568h14.102c0.865,0,1.566-0.703,1.566-1.568V4.869C18.617,4.003,17.916,3.302,17.051,3.302z M17.834,15.053c0,0.434-0.35,0.783-0.783,0.783H2.949c-0.433,0-0.784-0.35-0.784-0.783V4.869c0-0.433,0.351-0.784,0.784-0.784h14.102c0.434,0,0.783,0.351,0.783,0.784V15.053zM15.877,5.362L10,9.179L4.123,5.362C3.941,5.245,3.699,5.296,3.581,5.477C3.463,5.659,3.515,5.901,3.696,6.019L9.61,9.86C9.732,9.939,9.879,9.935,10,9.874c0.121,0.062,0.268,0.065,0.39-0.014l5.915-3.841c0.18-0.118,0.232-0.36,0.115-0.542C16.301,5.296,16.059,5.245,15.877,5.362z',
         ],
     ];
+
+    $videos = [
+        [
+            'text' => 'Introduction',
+            'url'   => 'https://youtu.be/jDYClRItWE0',
+        ],
+        [
+            'text' => 'Part 1',
+            'url'   => 'https://youtu.be/h7x9xLazwl0',
+        ],
+        [
+            'text' => 'Part 2',
+            'url'   => 'https://youtu.be/7iID1wFL06E',
+        ],
+    ];
 @endphp
 
 @extends('_layouts.main')
@@ -37,15 +52,21 @@
     :image="'/assets/images/landing/invoicing-system-google-sheets.jpeg'"
     :title="$title"
 >
-    <div class="[&>p]:mb-4">
+    <div class="[&>p]:mb-4 pb-10">
         <p>This is not just a boring one-page Google Sheets template for manually generating invoices. This is a much improved version of such a template.</p>
-        <h2 class="text-center text-2xl font-bold uppercase mt-10">It allows you to:</h2>
-        <div class="mx-auto w-20 border-t-4 border-indigo-300 mt-4"></div>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="flex justify-center mt-10">
+            <div class="inline-block w-[560px]">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/jDYClRItWE0" title="Create Your invoices in Google Sheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <h2 class="text-center text-2xl font-bold uppercase mt-14">It allows you to:</h2>
+        <div class="mx-auto w-20 border-t-4 border-indigo-300 mt-6"></div>
+        <div class="grid grid-cols-3 gap-4 mt-4">
             @foreach ($benefits as $benefit)    
-                <div class="flex flex-col mt-10">
+                <div class="flex flex-col mt-6">
                     <div class="text-center">
-                        <div class="bg-indigo-700 rounded-full inline-block p-4">
+                        <div class="bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-full inline-block p-4">
                             <svg class="svg-icon w-8 h-8" viewBox="0 0 20 20">
                                 <path fill="white" d="{{ $benefit['iconPath'] }}"></path>
                             </svg>
@@ -55,6 +76,15 @@
                 </div>
             @endforeach
         </div>
+
+        <h2 class="text-center text-2xl font-bold uppercase mt-16">Cource videos</h2>
+        <div class="mx-auto w-20 border-t-4 border-indigo-300 mt-6"></div>
+        <ul class="mt-8">
+            @foreach ($videos as $video)
+                <li class="mt-3">&bull; {{ $video['text'] }}: <a href="{{ $video['url'] }}" target="_blank" class="text-indigo-500 underline hover:text-indigo-600 hover:no-underline">{{ $video['url'] }}</a></li>
+            @endforeach
+            <li class="mt-3 text-zinc-500">&bull; Part 3: comming soon...</li>
+        </ul>
     </div>
 </x-page>
 @endsection
