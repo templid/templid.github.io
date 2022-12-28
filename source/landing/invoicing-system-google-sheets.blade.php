@@ -49,20 +49,20 @@
 
 @section('body')
 <x-page
-    :image="'/assets/images/landing/invoicing-system-google-sheets.jpeg'"
-    :title="$title"
+    :image="'/assets/images/landing/invoice-pc.png'"
+    :title="'<span class=\'block drop-shadow-lg md:py-8\'>'.$title.'</span>'"
 >
     <div class="[&>p]:mb-4 pb-10">
         <p>This is not just a boring one-page Google Sheets template for manually generating invoices. This is a much improved version of such a template.</p>
-        <div class="flex justify-center mt-10">
-            <div class="inline-block w-[560px]">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/jDYClRItWE0" title="Create Your invoices in Google Sheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="flex justify-center mt-10 md:mx-auto -mx-6">
+            <div class="inline-block md:w-[560px] w-full">
+                <iframe width="100%" height="240" src="https://www.youtube.com/embed/jDYClRItWE0" title="Create Your invoices in Google Sheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
-        <h2 class="text-center text-2xl font-bold uppercase mt-14">It allows you to:</h2>
+        <h2 class="text-center text-2xl font-bold uppercase mt-20">It allows you to:</h2>
         <div class="mx-auto w-20 border-t-4 border-indigo-300 mt-6"></div>
-        <div class="grid grid-cols-3 gap-4 mt-4">
+        <div class="grid gap-4 mt-4 grid-cols-2 md:grid-cols-3">
             @foreach ($benefits as $benefit)    
                 <div class="flex flex-col mt-6">
                     <div class="text-center">
@@ -77,7 +77,7 @@
             @endforeach
         </div>
 
-        <h2 class="text-center text-2xl font-bold uppercase mt-16">Cource videos</h2>
+        <h2 class="text-center text-2xl font-bold uppercase mt-20">Cource videos</h2>
         <div class="mx-auto w-20 border-t-4 border-indigo-300 mt-6"></div>
         <ul class="mt-8">
             @foreach ($videos as $video)
