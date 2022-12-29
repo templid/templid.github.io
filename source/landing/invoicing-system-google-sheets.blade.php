@@ -42,6 +42,10 @@
             'text' => 'Part 2',
             'url'   => 'https://youtu.be/7iID1wFL06E',
         ],
+        [
+            'text' => 'Part 3',
+            'url'   => 'https://youtu.be/u2-Qxiup1sw',
+        ],
     ];
 @endphp
 
@@ -83,7 +87,7 @@
             @foreach ($videos as $video)
                 <li class="mt-3">&bull; {{ $video['text'] }}: <a href="{{ $video['url'] }}" target="_blank" class="text-indigo-500 underline hover:text-indigo-600 hover:no-underline">{{ $video['url'] }}</a></li>
             @endforeach
-            <li class="mt-3 text-zinc-500">&bull; Part 3: comming soon...</li>
+            <li class="mt-3 text-zinc-500">&bull; Part 4: comming soon...</li>
         </ul>
     </div>
 </x-page>
