@@ -21,9 +21,14 @@
                     <div class="basis-1/3">
                         <div class="font-bold mb-2 text-neutral-500">Information</div>
                         <ul>
-                            <li>
+                            <li class="mt-2">
                                 <a href="/pages/about" class="underline underline-offset-4 hover:no-underline">
                                     About us
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="https://www.youtube.com/@templid-com" class="underline underline-offset-4 hover:no-underline" target="_blank">
+                                    YouTube channel
                                 </a>
                             </li>
                         </ul>
@@ -31,7 +36,7 @@
                     <div class="basis-1/3">
                         <div class="font-bold mb-2 text-neutral-500">Products</div>
                         <ul>
-                            <li>
+                            <li class="mt-2">
                                 <a href="/products/1-invoicing-system-in-google-sheets" class="underline underline-offset-4  hover:no-underline">
                                     Invoicing System in Google Sheets
                                 </a>
