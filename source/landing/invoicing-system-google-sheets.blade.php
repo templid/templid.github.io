@@ -1,5 +1,5 @@
 @php
-    $title       = 'Free course: Create your invoices in Google Sheets';
+    $title       = 'Free course: Automate your invoices in Google Sheets';
     $description = 'This is not just a boring one-page Google Sheets template for manually generating invoices. This is a much improved version of such a template.';
 
     $benefits = [
