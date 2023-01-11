@@ -32,23 +32,27 @@
     $videos = [
         [
             'text' => 'Introduction',
-            'url'   => 'https://youtu.be/jDYClRItWE0',
+            'url'  => 'https://youtu.be/jDYClRItWE0',
         ],
         [
             'text' => 'Part 1',
-            'url'   => 'https://youtu.be/h7x9xLazwl0',
+            'url'  => 'https://youtu.be/h7x9xLazwl0',
         ],
         [
             'text' => 'Part 2',
-            'url'   => 'https://youtu.be/7iID1wFL06E',
+            'url'  => 'https://youtu.be/7iID1wFL06E',
         ],
         [
             'text' => 'Part 3',
-            'url'   => 'https://youtu.be/u2-Qxiup1sw',
+            'url'  => 'https://youtu.be/u2-Qxiup1sw',
         ],
         [
             'text' => 'Part 4',
-            'url'   => 'https://youtu.be/eLplzjggDeg',
+            'url'  => 'https://youtu.be/eLplzjggDeg',
+        ],
+        [
+            'text' => 'Part 5',
+            'url'  => 'https://youtu.be/fSaEeCPQeFg',
         ],
     ];
 @endphp
@@ -91,7 +95,7 @@
             @foreach ($videos as $video)
                 <li class="mt-3">&bull; {{ $video['text'] }}: <a href="{{ $video['url'] }}" target="_blank" class="text-indigo-500 underline hover:text-indigo-600 hover:no-underline">{{ $video['url'] }}</a></li>
             @endforeach
-            <li class="mt-3 text-zinc-500">&bull; Part 5 is comming soon...</li>
+            <li class="mt-3 text-zinc-500">&bull; Part 6 is comming soon...</li>
         </ul>
     </div>
 </x-page>
